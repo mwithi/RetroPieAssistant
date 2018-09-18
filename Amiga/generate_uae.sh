@@ -59,6 +59,7 @@ function get_multidisk_strings {
 function init_config {
   configfile=$1
   vprint "Initializing $configfile..."
+  sed -i '/config_description=/{s/=.*/=Configuration for game '"$game"'/}' "$ROM_FOLDER/$uae_file"
   for i in `seq 0 3`; do
     sed -i '/floppy'"$i"'=/{s/=.*/=/}' "$ROM_FOLDER_CUR/$uae_file"
   done
