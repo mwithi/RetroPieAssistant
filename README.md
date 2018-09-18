@@ -1,4 +1,4 @@
-# RetroPieAssistant
+# RetroPieAssistant - Amyberry template
 
 Helpful scripts and things for RetroPie configuration.
 
